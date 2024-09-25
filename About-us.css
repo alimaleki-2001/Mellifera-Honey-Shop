@@ -1,0 +1,138 @@
+@font-face {
+    font-family: B-Nazanin-Bold;
+    src: url(./Assets/fonts/B-Nazanin-Bold/B\ Nazanin\ Bold_0.ttf);
+    src: url(./Assets/fonts/B-Nazanin-Bold/BNazaninBold.woff);
+    src: url(./Assets/fonts/B-Nazanin-Bold/BNazaninBold.woff2);
+}
+
+@font-face {
+    font-family: Gandom;
+    src: url(./Assets/fonts/Gandom/Gandom.ttf);
+    src: url(./Assets/fonts/Gandom/Gandom.woff);
+    src: url(./Assets/fonts/Gandom/Gandom.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.background {
+    background-image: url(./Assets/images/5329985_2754781.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+div.background>div.menu {
+    width: 20%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #d3a863;
+    position: absolute;
+    left: calc(50% - 20% / 2);
+    top: 40px;
+    padding-top: 7px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 3px solid rgba(114, 5, 5, 0.577);
+    transition: 900ms;
+}
+
+div.background>div.menu:hover {
+    box-shadow: 8px 8px 15px #6B401E;
+}
+
+div.background>div.menu>a {
+    width: inherit;
+    height: inherit;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 20px;
+    color: unset;
+    font-family: B-Nazanin-Bold;
+    transition: 500ms;
+}
+
+div.background>div.menu>a.about-us {
+    color: #c74817;
+}
+
+div.background>div.menu>a.home:hover,
+div.background>div.menu>a.products:hover,
+div.background>div.menu>a.about-us:hover,
+div.background>div.menu>a.contact-us:hover {
+    color: rgb(234, 0, 0);
+    font-weight: 700;
+}
+
+div.background>div.box {
+    background-color: #f5b83df5;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: calc(50% - 63% / 2);
+    left: calc(50% - 50% / 2);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 900ms;
+}
+
+div.background>div.box>div.image>img {
+    display: inline-block;
+    object-fit: cover;
+    height: 550px;
+    width: 47%;
+    position: absolute;
+    right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 900ms;
+}
+
+div.background>div.box>div.text {
+    width: 53%;
+    height: 550px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+}
+
+div.background>div.box>div.text>h2 {
+    padding-top: 22px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: B-Nazanin-Bold;
+}
+
+div.background>div.box>div.text>p {
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    text-align: justify;
+    direction: rtl;
+    line-height: 25px;
+    font-family: Gandom;
+    transition: 900ms;
+}
+
+div.background>div.box>div.text:hover>p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    background-color: #a8520729;
+    border-radius: 8px;
+}
+
+div.background>div.box:hover {
+    box-shadow: 8px 8px 50px #6B401E;
+}
