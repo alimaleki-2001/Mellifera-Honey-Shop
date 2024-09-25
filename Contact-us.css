@@ -1,0 +1,166 @@
+@font-face {
+    font-family: B-Nazanin-Bold;
+    src: url(./Assets/fonts/B-Nazanin-Bold/B\ Nazanin\ Bold_0.ttf);
+    src: url(./Assets/fonts/B-Nazanin-Bold/BNazaninBold.woff);
+    src: url(./Assets/fonts/B-Nazanin-Bold/BNazaninBold.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.background {
+    background-image: url(./Assets/images/5329985_2754781.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+div.background>div.menu {
+    width: 20%;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #d3a863;
+    position: absolute;
+    left: calc(50% - 20% / 2);
+    top: 40px;
+    padding-top: 7px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 3px solid rgba(114, 5, 5, 0.577);
+    transition: 900ms;
+}
+
+div.background>div.menu:hover {
+    box-shadow: 8px 8px 15px #6B401E;
+}
+
+div.background>div.menu>a {
+    width: inherit;
+    height: inherit;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 20px;
+    color: unset;
+    font-family: B-Nazanin-Bold;
+    transition: 700ms;
+}
+
+div.background>div.menu>a.contact-us {
+    color: #c74817;
+}
+
+div.background>div.menu>a.home:hover,
+div.background>div.menu>a.products:hover,
+div.background>div.menu>a.about-us:hover,
+div.background>div.menu>a.contact-us:hover {
+    color: rgb(234, 0, 0);
+    font-weight: 700;
+}
+
+div.background>div.box {
+    background-color: #f5b83de7;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    top: calc(50% - 63% / 2);
+    left: calc(50% - 50% / 2);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+div.background>div.box>div.image>img {
+    display: inline-block;
+    object-fit: cover;
+    height: 550px;
+    width: 47%;
+    position: absolute;
+    right: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+div.background>div.box>div.form {
+    width: 53%;
+    height: 550px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    transition: 900ms;
+}
+
+div.background>div.box>div.form>form {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    left: calc(50% - 60% / 2);
+    top: 12%;
+    font-family: B-Nazanin-Bold;
+}
+
+div.background>div.box>div.form>form>input {
+    display: block;
+    padding: 7px;
+    border: none;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    text-align: right;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: 400ms;
+}
+
+div.background>div.box>div.form>form>textarea {
+    padding: 7px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    resize: none;
+    direction: rtl;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    transition: 400ms;
+}
+
+div.background>div.box>div.form>form>input[type=submit] {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    transition: 400ms;
+}
+
+div.background>div.box>div.form>form>input[type=submit]:hover {
+    background-color: #751a02;
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-top: 15px;
+}
+
+div.background>div.box>div.form>form>input[type=text]:hover,
+div.background>div.box>div.form>form>input[type=email]:hover,
+div.background>div.box>div.form>form>textarea:hover {
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    border: 2px solid #751a02;
+}
