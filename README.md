@@ -1,2 +1,2 @@
 # Mellifera-Honey-Shop
-This project is written by Ali Maleki using CSS
+This is the 1st project written by Ali Maleki using CSS (Not Responsive)
